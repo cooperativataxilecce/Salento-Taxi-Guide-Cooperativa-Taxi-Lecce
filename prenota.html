@@ -57,79 +57,141 @@ alla Cooperativa Taxi Lecce.
 <form id="prenotazione">
 
 
+<div class="input-group">
+
 <label>
-Nome e Cognome
+Nome e Cognome *
 </label>
 
 <input type="text" id="nome" required>
 
+</div>
 
 
+
+<div class="input-group">
 
 <label>
-Numero di telefono
+Numero di telefono *
 </label>
 
 <input type="tel" id="telefono" required>
 
+</div>
 
 
+
+
+<div class="input-group">
 
 <label>
-Partenza
+Indirizzo di partenza *
 </label>
 
 <input type="text" id="partenza" required>
 
+</div>
 
 
+
+
+<div class="input-group">
 
 <label>
-Destinazione
+Indirizzo di arrivo *
 </label>
 
 <input type="text" id="destinazione" required>
 
+</div>
 
 
+
+
+
+<div class="row">
+
+
+<div class="input-group">
 
 <label>
-Data servizio
+Data *
 </label>
 
 <input type="date" id="data" required>
 
+</div>
 
 
+
+<div class="input-group">
 
 <label>
-Ora servizio
+Orario *
 </label>
 
 <input type="time" id="ora" required>
 
+</div>
 
 
+</div>
+
+
+
+
+
+<div class="input-group">
 
 <label>
-Numero passeggeri
+Numero passeggeri *
 </label>
 
 <input type="number" id="passeggeri" min="1" required>
 
+</div>
 
+
+
+
+
+<div class="input-group">
+
+<label>
+Note extra
+</label>
+
+<textarea 
+id="note"
+placeholder="Inserisci eventuali richieste particolari">
+</textarea>
+
+</div>
+
+
+
+
+
+<div class="privacy-box">
 
 
 <label>
-Bagagli
+
+<input type="checkbox" id="privacy" required>
+
+Accetto il trattamento dei dati personali secondo
+l'informativa privacy della Cooperativa Taxi Lecce.
+
 </label>
 
-<input type="number" id="bagagli" min="0" value="0">
+
+</div>
 
 
 
 
-<button type="submit">
+
+<button class="main-button" type="submit">
 Invia richiesta
 </button>
 
