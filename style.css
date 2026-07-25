@@ -264,3 +264,41 @@ footer {
 
 
 }
+
+
+textarea {
+
+    width:100%;
+
+    min-height:100px;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    border:1px solid #ddd;
+
+    font-size:16px;
+
+    resize:none;
+
+}
+
+
+
+.privacy-box {
+
+    margin:20px 0;
+
+    font-size:14px;
+
+    color:#555;
+
+}
+
+
+.privacy-box input {
+
+    margin-right:8px;
+
+}
