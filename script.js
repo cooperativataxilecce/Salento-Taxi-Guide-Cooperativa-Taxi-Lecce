@@ -1,6 +1,29 @@
+// Compilazione automatica destinazione
+
+window.addEventListener("DOMContentLoaded", function(){
+
+    let parametri = new URLSearchParams(window.location.search);
+
+    let destinazione = parametri.get("destinazione");
+
+
+    if(destinazione){
+
+        document.getElementById("destinazione").value = destinazione;
+
+    }
+
+});
+
+
+
+
+// Invio prenotazione WhatsApp
+
 document.getElementById("prenotazione")?.addEventListener("submit", function(e){
 
     e.preventDefault();
+
 
 
     let nome = document.getElementById("nome").value;
@@ -17,41 +40,57 @@ document.getElementById("prenotazione")?.addEventListener("submit", function(e){
 
     let passeggeri = document.getElementById("passeggeri").value;
 
-    let bagagli = document.getElementById("bagagli").value;
+    let note = document.getElementById("note").value;
+
+
+
+    if(note.trim() === ""){
+
+        note = "Nessuna";
+
+    }
 
 
 
     let messaggio = 
-`Nuova richiesta taxi
+`NUOVA RICHIESTA TAXI
 
-Nome e Cognome: ${nome}
+Nome e Cognome:
+${nome}
 
-Telefono: ${telefono}
+Numero di telefono:
+${telefono}
 
-Partenza: ${partenza}
+Indirizzo di partenza:
+${partenza}
 
-Destinazione: ${destinazione}
+Indirizzo di arrivo:
+${destinazione}
 
-Data: ${data}
+Data servizio:
+${data}
 
-Ora: ${ora}
+Orario:
+${ora}
 
-Passeggeri: ${passeggeri}
+Numero passeggeri:
+${passeggeri}
 
-Bagagli: ${bagagli}`;
-
-
-
-    let numero = "393XXXXXXXXX"; 
-    // sostituire con il numero WhatsApp della cooperativa
-
-
-    let url = 
-    "https://wa.me/" + numero + "?text=" + encodeURIComponent(messaggio);
-
+Note extra:
+${note}`;
 
 
-    window.open(url, "_blank");
+
+    let numeroWhatsApp = "393XXXXXXXXX";
+
+
+    let link = 
+    "https://wa.me/" + numeroWhatsApp + 
+    "?text=" + encodeURIComponent(messaggio);
+
+
+
+    window.open(link, "_blank");
 
 
 });
