@@ -220,19 +220,21 @@ let risultato = generaItinerario(
             <div>
 
 
-            <strong>
-            ${posto.nome}
-            </strong>
+<strong>
+${posto.nome}
+</strong>
 
 
-            <br>
+<p>
+${posto.descrizione}
+</p>
 
 
-            <a href="prenota.html?destinazione=${encodeURIComponent(posto.nome)}">
+<a href="prenota.html?destinazione=${encodeURIComponent(posto.nome)}">
 
-            Prenota Taxi
+Prenota Taxi
 
-            </a>
+</a>
 
 
             </div>
