@@ -38,6 +38,8 @@ const localita = [
 
 {
     nome: "Otranto",
+    descrizione:
+"Centro storico sul mare, con il Castello Aragonese, la Cattedrale e splendidi panorami sulla costa.",
 
     zona: "adriatico",
 
