@@ -492,3 +492,44 @@ textarea {
 
 
 }
+
+
+.row-form {
+
+    display:flex;
+
+    gap:12px;
+
+    width:100%;
+
+}
+
+
+.row-form .input-box {
+
+    flex:1;
+
+    min-width:0;
+
+}
+
+
+.row-form input {
+
+    width:100%;
+
+    box-sizing:border-box;
+
+}
+
+
+
+@media(max-width:500px){
+
+    .row-form {
+
+        flex-direction:column;
+
+    }
+
+}
