@@ -1,35 +1,52 @@
 let giorni = "";
+
 let preferenze = {
-    mare: false,
-    borghi: false,
-    panorami: false,
-    tradizioni: false
+    mare:false,
+    borghi:false,
+    panorami:false,
+    tradizioni:false
 };
 
 
 
 document.querySelectorAll(".choice").forEach(button => {
 
+
     button.addEventListener("click", function(){
 
-        let testo = this.innerText;
+
+        let tipo = this.dataset.type;
 
 
-        if(["1 giorno","2 giorni","3 giorni","4-5 giorni","7 giorni"].includes(testo)){
-
-            giorni = testo;
-
-        }
+        let gruppo = document.querySelectorAll(
+            `[data-type="${tipo}"]`
+        );
 
 
-        if(testo === "Si"){
+        gruppo.forEach(btn => {
 
-            this.classList.add("selected");
+            btn.classList.remove("selected");
+
+        });
+
+
+        this.classList.add("selected");
+
+
+
+        if(this.innerText === "Si"){
+
+            preferenze[tipo] = true;
+
+        } else {
+
+            preferenze[tipo] = false;
 
         }
 
 
     });
+
 
 });
 
@@ -37,67 +54,53 @@ document.querySelectorAll(".choice").forEach(button => {
 
 
 
-document.querySelector(".main-button").addEventListener("click", function(){
+document.querySelectorAll(".choice").forEach(button => {
 
 
-    let scelte = document.querySelectorAll(".selected");
+    if(
+        ["1 giorno","2 giorni","3 giorni","4-5 giorni","7 giorni"]
+        .includes(button.innerText)
+    ){
 
 
-    preferenze = {
-
-        mare:false,
-
-        borghi:false,
-
-        panorami:false,
-
-        tradizioni:false
-
-    };
+        button.addEventListener("click", function(){
 
 
+            document.querySelectorAll(".choice")
+            .forEach(btn=>{
 
-    let domande = document.querySelectorAll("h2");
+                if(
+                ["1 giorno","2 giorni","3 giorni","4-5 giorni","7 giorni"]
+                .includes(btn.innerText)
+                ){
 
+                    btn.classList.remove("selected");
 
+                }
 
-    scelte.forEach(scelta => {
-
-
-        let domanda = scelta.parentElement.previousElementSibling.innerText;
-
-
-
-        if(domanda.includes("mare")){
-
-            preferenze.mare = true;
-
-        }
+            });
 
 
-        if(domanda.includes("borghi")){
-
-            preferenze.borghi = true;
-
-        }
+            this.classList.add("selected");
 
 
-        if(domanda.includes("Panorami") || domanda.includes("panorami")){
-
-            preferenze.panorami = true;
-
-        }
+            giorni = this.innerText;
 
 
-        if(domanda.includes("cucina")){
-
-            preferenze.tradizioni = true;
-
-        }
+        });
 
 
-    });
+    }
 
+
+});
+
+
+
+
+
+document.querySelector(".main-button")
+.addEventListener("click", function(){
 
 
     creaItinerario();
@@ -109,113 +112,110 @@ document.querySelector(".main-button").addEventListener("click", function(){
 
 
 
+
 function creaItinerario(){
 
 
-    let tappe = [];
+let tappe=[];
 
 
 
-    if(preferenze.mare){
+if(preferenze.mare){
 
-        tappe.push("Pescoluse");
+    tappe.push("Pescoluse");
+    tappe.push("Torre Lapillo");
 
-        tappe.push("Torre Lapillo");
-
-        tappe.push("Porto Cesareo");
-
-    }
+}
 
 
 
-    if(preferenze.borghi){
+if(preferenze.borghi){
 
-        tappe.push("Lecce");
+    tappe.push("Lecce");
+    tappe.push("Otranto");
 
-        tappe.push("Otranto");
-
-        tappe.push("Galatina");
-
-    }
+}
 
 
 
-    if(preferenze.panorami){
+if(preferenze.panorami){
 
-        tappe.push("Santa Maria di Leuca");
+    tappe.push("Santa Maria di Leuca");
+    tappe.push("Castro");
 
-        tappe.push("Castro");
-
-    }
-
-
-
-    if(preferenze.tradizioni){
-
-        tappe.push("Grecìa Salentina");
-
-    }
+}
 
 
 
-    if(tappe.length === 0){
+if(preferenze.tradizioni){
 
-        tappe.push("Lecce");
+    tappe.push("Galatina");
+    tappe.push("Grecìa Salentina");
 
-        tappe.push("Otranto");
-
-        tappe.push("Gallipoli");
-
-    }
+}
 
 
 
-    let risultato = document.createElement("section");
+if(tappe.length===0){
 
-    risultato.className = "booking-card";
+    tappe=[
+        "Lecce",
+        "Otranto",
+        "Gallipoli"
+    ];
 
-
-
-    risultato.innerHTML = `
-
-    <h2>
-    Il tuo itinerario consigliato
-    </h2>
-
-
-    <p>
-    Durata viaggio: ${giorni}
-    </p>
-
-
-    ${tappe.map((tappa,index)=>`
-
-    <div class="itinerary-place">
-
-    <h3>
-    Giorno ${index + 1}
-    </h3>
-
-
-    <p>
-    ${tappa}
-    </p>
-
-
-    <a href="prenota.html?destinazione=${encodeURIComponent(tappa)}">
-    Prenota Taxi
-    </a>
-
-
-    </div>
-
-    `).join("")}
-
-    `;
+}
 
 
 
-    document.body.appendChild(risultato);
+
+let risultato=document.createElement("section");
+
+risultato.className="booking-card";
+
+
+risultato.innerHTML=`
+
+<h2>
+Il tuo itinerario consigliato
+</h2>
+
+
+<p>
+Durata: ${giorni || "3 giorni"}
+</p>
+
+
+${tappe.map((posto,index)=>`
+
+<div class="itinerary-place">
+
+<h3>
+Giorno ${index+1}
+</h3>
+
+<p>
+${posto}
+</p>
+
+
+<a href="prenota.html?destinazione=${encodeURIComponent(posto)}">
+
+Prenota Taxi
+
+</a>
+
+
+</div>
+
+
+`).join("")}
+
+`;
+
+
+
+document.body.appendChild(risultato);
 
 
 }
