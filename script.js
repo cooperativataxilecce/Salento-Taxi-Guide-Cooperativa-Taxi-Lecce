@@ -1,3 +1,24 @@
+window.addEventListener("DOMContentLoaded", function(){
+
+    let parametri = new URLSearchParams(window.location.search);
+
+    let destinazione = parametri.get("destinazione");
+
+
+    if(destinazione){
+
+        let campo = document.getElementById("destinazione");
+
+        if(campo){
+
+            campo.value = destinazione;
+
+        }
+
+    }
+
+});
+
 // Compilazione automatica destinazione
 
 window.addEventListener("DOMContentLoaded", function(){
