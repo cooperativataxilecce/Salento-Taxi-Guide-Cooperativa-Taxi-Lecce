@@ -1,4 +1,4 @@
-function generaItinerario(giorni, preferenze) {
+function generaItinerario(giorni, preferenze, tipoViaggio) {
 
 
     let lista = localita.map(posto => {
