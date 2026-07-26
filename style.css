@@ -635,3 +635,20 @@ input[type="time"] {
     color:#333;
 
 }
+
+.privacy-card a {
+
+    color:#e87517;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+
+.privacy-card a:hover {
+
+    text-decoration:underline;
+
+}
