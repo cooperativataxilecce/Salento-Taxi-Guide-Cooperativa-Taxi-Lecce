@@ -81,7 +81,7 @@ ${note}`;
 
 
 
-    let numeroWhatsApp = "393XXXXXXXXX";
+    let numeroWhatsApp = "393286714428";
 
 
     let link = 
