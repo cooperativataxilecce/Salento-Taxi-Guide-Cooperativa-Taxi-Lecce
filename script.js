@@ -40,8 +40,9 @@ window.addEventListener("DOMContentLoaded", function(){
 
 
 // Invio prenotazione WhatsApp
+document.getElementById("prenotazione")
+.addEventListener("submit", function(e){
 
-document.getElementById("prenotazione")?.addEventListener("submit", function(e){
 
     e.preventDefault();
 
@@ -65,16 +66,8 @@ document.getElementById("prenotazione")?.addEventListener("submit", function(e){
 
 
 
-    if(note.trim() === ""){
-
-        note = "Nessuna";
-
-    }
-
-
-
     let messaggio = 
-`NUOVA RICHIESTA TAXI
+`Salve, vorrei richiedere un taxi.
 
 Nome e Cognome:
 ${nome}
@@ -88,7 +81,7 @@ ${partenza}
 Indirizzo di arrivo:
 ${destinazione}
 
-Data servizio:
+Data:
 ${data}
 
 Orario:
@@ -98,20 +91,24 @@ Numero passeggeri:
 ${passeggeri}
 
 Note extra:
-${note}`;
+${note || "Nessuna"}
+
+Privacy:
+Accettata`;
 
 
 
-    let numeroWhatsApp = "393286714428";
+    let numero = "3286714428";
 
 
-    let link = 
-    "https://wa.me/" + numeroWhatsApp + 
+
+    let url = 
+    "https://wa.me/" + numero +
     "?text=" + encodeURIComponent(messaggio);
 
 
 
-    window.open(link, "_blank");
+    window.open(url, "_blank");
 
 
 });
