@@ -584,17 +584,7 @@ textarea {
 }
 
 
-.home-logo {
 
-    width:120px;
-
-    height:auto;
-
-    display:block;
-
-    margin:0 auto 15px auto;
-
-}
 
 
 .row-form .input-box input {
@@ -686,5 +676,42 @@ input[type="time"] {
 .brand p {
 
     margin:5px 0 0;
+
+}
+
+
+.brand {
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+
+}
+
+
+.brand .home-logo {
+
+    width:65px;
+    height:65px;
+    object-fit:contain;
+    margin:0;
+    display:block;
+
+}
+
+
+.brand h1 {
+
+    margin:0;
+    font-size:24px;
+
+}
+
+
+.brand p {
+
+    margin:4px 0 0;
+    font-size:14px;
 
 }
