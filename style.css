@@ -652,3 +652,39 @@ input[type="time"] {
     text-decoration:underline;
 
 }
+
+
+.brand {
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:15px;
+
+}
+
+
+.home-logo {
+
+    width:70px;
+
+    height:auto;
+
+}
+
+
+.brand h1 {
+
+    margin:0;
+
+}
+
+
+.brand p {
+
+    margin:5px 0 0;
+
+}
