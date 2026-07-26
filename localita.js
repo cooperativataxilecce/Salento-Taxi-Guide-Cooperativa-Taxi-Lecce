@@ -290,7 +290,7 @@ const localita = [
         "Porto Cesareo",
         "Punta Prosciutto"
     ]
-}
+},
 
     {
     nome: "San Foca",
