@@ -115,3 +115,23 @@ ${note}`;
 
 
 });
+
+window.addEventListener("DOMContentLoaded", function(){
+
+
+    const parametri = new URLSearchParams(window.location.search);
+
+
+    const destinazione = parametri.get("destinazione");
+
+
+    if(destinazione){
+
+
+        document.getElementById("destinazione").value = destinazione;
+
+
+    }
+
+
+});
