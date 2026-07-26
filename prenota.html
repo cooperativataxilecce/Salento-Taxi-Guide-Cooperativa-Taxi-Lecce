@@ -31,77 +31,41 @@
 
 
 
-<main>
+<main class="booking-container">
 
 
-<section class="hero">
+<section class="booking-card">
+
+
+<div class="form-title">
 
 <h2>
 Prenota il tuo taxi
 </h2>
 
 <p>
-Compila il modulo e invia la richiesta
-alla Cooperativa Taxi Lecce.
+Inserisci i dati della corsa
 </p>
 
-
-</section>
-
+</div>
 
 
 
-<section class="card">
 
 
 <form id="prenotazione">
 
 
-<div class="input-group">
 
-<label>
-Nome e Cognome *
-</label>
+<div class="input-box">
 
-<input type="text" id="nome" required>
+<span class="input-icon">◉</span>
 
-</div>
-
-
-
-<div class="input-group">
-
-<label>
-Numero di telefono *
-</label>
-
-<input type="tel" id="telefono" required>
-
-</div>
-
-
-
-
-<div class="input-group">
-
-<label>
-Indirizzo di partenza *
-</label>
-
-<input type="text" id="partenza" required>
-
-</div>
-
-
-
-
-<div class="input-group">
-
-<label>
-Indirizzo di arrivo *
-</label>
-
-<input type="text" id="destinazione" required>
+<input 
+type="text"
+id="nome"
+placeholder="Nome e Cognome"
+required>
 
 </div>
 
@@ -109,31 +73,15 @@ Indirizzo di arrivo *
 
 
 
-<div class="row">
+<div class="input-box">
 
+<span class="input-icon">☎</span>
 
-<div class="input-group">
-
-<label>
-Data *
-</label>
-
-<input type="date" id="data" required>
-
-</div>
-
-
-
-<div class="input-group">
-
-<label>
-Orario *
-</label>
-
-<input type="time" id="ora" required>
-
-</div>
-
+<input 
+type="tel"
+id="telefono"
+placeholder="Numero di telefono"
+required>
 
 </div>
 
@@ -141,13 +89,15 @@ Orario *
 
 
 
-<div class="input-group">
+<div class="input-box">
 
-<label>
-Numero passeggeri *
-</label>
+<span class="input-icon">⌖</span>
 
-<input type="number" id="passeggeri" min="1" required>
+<input 
+type="text"
+id="partenza"
+placeholder="Indirizzo di partenza"
+required>
 
 </div>
 
@@ -155,15 +105,79 @@ Numero passeggeri *
 
 
 
-<div class="input-group">
+<div class="input-box">
 
-<label>
-Note extra
-</label>
+<span class="input-icon">⌖</span>
 
-<textarea 
+<input 
+type="text"
+id="destinazione"
+placeholder="Indirizzo di arrivo"
+required>
+
+</div>
+
+
+
+
+
+<div class="row-form">
+
+
+<div class="input-box">
+
+<span class="input-icon">▣</span>
+
+<input 
+type="date"
+id="data"
+required>
+
+</div>
+
+
+
+
+<div class="input-box">
+
+<span class="input-icon">◷</span>
+
+<input 
+type="time"
+id="ora"
+required>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="input-box">
+
+<span class="input-icon">＋</span>
+
+<input 
+type="number"
+id="passeggeri"
+placeholder="Numero passeggeri"
+min="1"
+required>
+
+</div>
+
+
+
+
+
+<div class="input-box">
+
+<textarea
 id="note"
-placeholder="Inserisci eventuali richieste particolari">
+placeholder="Note extra (facoltativo)">
 </textarea>
 
 </div>
@@ -172,15 +186,20 @@ placeholder="Inserisci eventuali richieste particolari">
 
 
 
-<div class="privacy-box">
+<div class="privacy-card">
 
 
 <label>
 
-<input type="checkbox" id="privacy" required>
+<input 
+type="checkbox"
+id="privacy"
+required>
 
-Accetto il trattamento dei dati personali secondo
-l'informativa privacy della Cooperativa Taxi Lecce.
+
+Accetto l'informativa privacy
+della Cooperativa Taxi Lecce.
+
 
 </label>
 
@@ -191,9 +210,19 @@ l'informativa privacy della Cooperativa Taxi Lecce.
 
 
 
-<button class="main-button" type="submit">
+<div class="fixed-button">
+
+
+<button type="submit">
+
 Invia richiesta
+
 </button>
+
+
+</div>
+
+
 
 
 </form>
@@ -213,7 +242,12 @@ Invia richiesta
 Cooperativa Taxi Lecce
 </p>
 
+<p>
+Veloce · Sicuro · Puntuale
+</p>
+
 </footer>
+
 
 
 
