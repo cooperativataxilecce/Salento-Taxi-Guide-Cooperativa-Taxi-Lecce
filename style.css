@@ -726,3 +726,15 @@ input[type="time"] {
     text-decoration:none;
 
 }
+
+
+.call-button,
+.call-button:visited,
+.call-button:hover,
+.call-button:active {
+
+    color:white;
+
+    text-decoration:none;
+
+}
