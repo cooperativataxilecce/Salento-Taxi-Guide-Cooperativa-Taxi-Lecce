@@ -3,15 +3,20 @@ const localita = [
 {
     nome: "Lecce",
 
+    zona: "entroterra",
+
     categorie: [
         "cultura",
         "borghi",
         "enogastronomia"
     ],
 
-    zona: "centro",
-
-    durata: 4,
+    idealePer: [
+        "coppia",
+        "famiglia",
+        "amici",
+        "solo"
+    ],
 
     stagioni: [
         "primavera",
@@ -20,16 +25,21 @@ const localita = [
         "inverno"
     ],
 
-    idealePer: [
-        "coppia",
-        "famiglia",
-        "amici",
-        "solo"
+    durata: 5,
+
+    priorita: 10,
+
+    vicine: [
+        "Acaya",
+        "Galatina"
     ]
 },
 
+
 {
     nome: "Otranto",
+
+    zona: "adriatico",
 
     categorie: [
         "mare",
@@ -37,9 +47,11 @@ const localita = [
         "cultura"
     ],
 
-    zona: "adriatico",
-
-    durata: 5,
+    idealePer: [
+        "coppia",
+        "famiglia",
+        "amici"
+    ],
 
     stagioni: [
         "primavera",
@@ -47,60 +59,149 @@ const localita = [
         "autunno"
     ],
 
-    idealePer: [
-        "coppia",
-        "famiglia",
-        "amici"
+    durata: 5,
+
+    priorita: 10,
+
+    vicine: [
+        "Porto Badisco",
+        "Castro",
+        "Santa Cesarea Terme"
     ]
 },
 
+
 {
-    nome: "Porto Badisco",
+    nome: "Gallipoli",
+
+    zona: "ionio",
 
     categorie: [
         "mare",
-        "panorami",
-        "relax"
+        "cultura",
+        "movida"
     ],
 
-    zona: "adriatico",
-
-    durata: 3,
+    idealePer: [
+        "amici",
+        "coppia"
+    ],
 
     stagioni: [
         "estate"
     ],
 
-    idealePer: [
-        "coppia"
+    durata: 6,
+
+    priorita: 10,
+
+    vicine: [
+        "Baia Verde",
+        "Rivabella"
     ]
 },
+
+
+{
+    nome: "Pescoluse",
+
+    zona: "ionio",
+
+    categorie: [
+        "mare",
+        "relax",
+        "famiglia"
+    ],
+
+    idealePer: [
+        "famiglia",
+        "coppia"
+    ],
+
+    stagioni: [
+        "estate"
+    ],
+
+    durata: 6,
+
+    priorita: 9,
+
+    vicine: [
+        "Santa Maria di Leuca",
+        "Torre San Giovanni"
+    ]
+},
+
+
+{
+    nome: "Santa Maria di Leuca",
+
+    zona: "ionio",
+
+    categorie: [
+        "mare",
+        "panorami",
+        "natura"
+    ],
+
+    idealePer: [
+        "coppia",
+        "famiglia"
+    ],
+
+    stagioni: [
+        "primavera",
+        "estate",
+        "autunno"
+    ],
+
+    durata: 5,
+
+    priorita: 10,
+
+    vicine: [
+        "Pescoluse",
+        "Torre San Giovanni"
+    ]
+},
+
 
 {
     nome: "Castro",
 
-    categorie: [
-        "mare",
-        "panorami"
-    ],
-
     zona: "adriatico",
 
-    durata: 4,
+    categorie: [
+        "mare",
+        "panorami",
+        "natura"
+    ],
+
+    idealePer: [
+        "coppia",
+        "famiglia"
+    ],
 
     stagioni: [
         "primavera",
         "estate"
     ],
 
-    idealePer: [
-        "coppia",
-        "famiglia"
+    durata: 4,
+
+    priorita: 9,
+
+    vicine: [
+        "Santa Cesarea Terme",
+        "Porto Badisco"
     ]
 },
 
+
 {
-    nome: "Santa Cesarea Terme",
+    nome: "Porto Badisco",
+
+    zona: "adriatico",
 
     categorie: [
         "mare",
@@ -108,17 +209,21 @@ const localita = [
         "panorami"
     ],
 
-    zona: "adriatico",
-
-    durata: 4,
+    idealePer: [
+        "coppia"
+    ],
 
     stagioni: [
-        "primavera",
         "estate"
     ],
 
-    idealePer: [
-        "coppia"
+    durata: 3,
+
+    priorita: 8,
+
+    vicine: [
+        "Otranto",
+        "Castro"
     ]
 }
 
