@@ -1,10 +1,11 @@
 function generaItinerario(giorni, preferenze) {
 
 
-    let localitaScelte = localita.map(posto => {
+    let lista = localita.map(posto => {
 
 
         let punteggio = 0;
+
 
 
         preferenze.forEach(pref => {
@@ -13,6 +14,13 @@ function generaItinerario(giorni, preferenze) {
             if(posto.categorie.includes(pref)){
 
                 punteggio += 5;
+
+            }
+
+
+            if(posto.idealePer.includes(pref)){
+
+                punteggio += 2;
 
             }
 
@@ -29,7 +37,7 @@ function generaItinerario(giorni, preferenze) {
 
             ...posto,
 
-            punteggio:punteggio
+            punteggio
 
         };
 
@@ -40,7 +48,7 @@ function generaItinerario(giorni, preferenze) {
 
     // ordina per compatibilità
 
-    localitaScelte.sort((a,b)=>{
+    lista.sort((a,b)=>{
 
         return b.punteggio - a.punteggio;
 
@@ -54,53 +62,71 @@ function generaItinerario(giorni, preferenze) {
 
 
 
+    // massimo 2 tappe al giorno
+
+    let massimo = giorni * 2;
+
+
+
+    let selezionate = lista
+    .filter(p=>{
+
+        return !usate.includes(p.nome);
+
+    })
+    .slice(0,massimo);
+
+
+
     for(let giorno = 1; giorno <= giorni; giorno++){
 
 
-        let tappeGiorno = [];
+        let disponibili = selezionate.filter(p=>{
+
+            return !usate.includes(p.nome);
+
+        });
 
 
 
-        // prende una zona dominante
+        if(disponibili.length === 0){
 
-        let prima = localitaScelte.find(p =>
+            break;
 
-            !usate.includes(p.nome)
-
-        );
+        }
 
 
 
-        if(!prima) break;
+        let prima = disponibili[0];
+
+        usate.push(prima.nome);
 
 
 
-        let zona = prima.zona;
+        let tappe = [
+            prima
+        ];
 
 
 
-        let nellaZona = localitaScelte.filter(p =>
+        // cerca una località vicina
 
-            p.zona === zona &&
-
-            !usate.includes(p.nome)
-
-        );
+        let seconda = disponibili.find(p=>{
 
 
+            return prima.vicine.includes(p.nome);
 
-        tappeGiorno.push(nellaZona[0]);
 
-        usate.push(nellaZona[0].nome);
+        });
 
 
 
-        if(nellaZona[1]){
+        if(seconda){
 
 
-            tappeGiorno.push(nellaZona[1]);
+            tappe.push(seconda);
 
-            usate.push(nellaZona[1].nome);
+            usate.push(seconda.nome);
 
 
         }
@@ -109,11 +135,11 @@ function generaItinerario(giorni, preferenze) {
 
         itinerario.push({
 
-            giorno:giorno,
+            giorno: giorno,
 
-            zona:zona,
+            zona: prima.zona,
 
-            tappe:tappeGiorno
+            tappe:tappe
 
         });
 
