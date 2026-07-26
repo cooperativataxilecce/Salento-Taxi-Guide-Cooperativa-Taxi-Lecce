@@ -2,7 +2,7 @@ let giorni = 3;
 
 
 let preferenze = [];
-
+let tipoViaggio = [];
 
 
 document.querySelectorAll(".choice").forEach(button => {
