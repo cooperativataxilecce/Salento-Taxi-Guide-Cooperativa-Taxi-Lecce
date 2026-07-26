@@ -14,44 +14,79 @@ document.querySelectorAll(".choice").forEach(button => {
         let tipo = this.dataset.type;
 
 
-        if(tipo){
-
-            let gruppo = document.querySelectorAll(
-                `[data-type="${tipo}"]`
-            );
+if(tipo){
 
 
-            gruppo.forEach(btn=>{
-
-                btn.classList.remove("selected");
-
-            });
-
-
-
-            this.classList.add("selected");
-
-
-
-            if(this.innerText === "Si"){
+    let interessi = [
+        "mare",
+        "cultura",
+        "borghi",
+        "panorami",
+        "natura",
+        "relax",
+        "enogastronomia",
+        "movida"
+    ];
 
 
-                if(!preferenze.includes(tipo)){
-
-                    preferenze.push(tipo);
-
-                }
-
-
-            } else {
+    let viaggiatori = [
+        "famiglia",
+        "coppia",
+        "amici",
+        "solo"
+    ];
 
 
-                preferenze = preferenze.filter(p=>p !== tipo);
+
+    if(interessi.includes(tipo)){
 
 
-            }
+        this.classList.toggle("selected");
+
+
+        if(preferenze.includes(tipo)){
+
+
+            preferenze = preferenze.filter(p=>p !== tipo);
+
+
+        } else {
+
+
+            preferenze.push(tipo);
+
 
         }
+
+
+    }
+
+
+
+    if(viaggiatori.includes(tipo)){
+
+
+        document.querySelectorAll(
+            '[data-type="famiglia"], [data-type="coppia"], [data-type="amici"], [data-type="solo"]'
+        )
+        .forEach(btn=>{
+
+            btn.classList.remove("selected");
+
+        });
+
+
+
+        this.classList.add("selected");
+
+
+        tipoViaggio = [tipo];
+
+
+    }
+
+
+}
 
 
 
