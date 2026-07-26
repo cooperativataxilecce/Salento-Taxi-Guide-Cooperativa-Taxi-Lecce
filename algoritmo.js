@@ -8,24 +8,31 @@ function generaItinerario(giorni, preferenze, tipoViaggio) {
 
 
 
-        preferenze.forEach(pref => {
+preferenze.forEach(pref => {
 
 
-            if(posto.categorie.includes(pref)){
+    if(posto.categorie.includes(pref)){
 
-                punteggio += 5;
+        punteggio += 5;
 
-            }
-
-
-            if(posto.idealePer.includes(pref)){
-
-                punteggio += 2;
-
-            }
+    }
 
 
-        });
+});
+
+
+
+tipoViaggio.forEach(tipo => {
+
+
+    if(posto.idealePer.includes(tipo)){
+
+        punteggio += 4;
+
+    }
+
+
+});
 
 
 
