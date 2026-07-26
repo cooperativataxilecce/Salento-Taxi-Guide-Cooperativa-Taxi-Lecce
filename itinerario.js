@@ -164,10 +164,11 @@ function mostraItinerario(){
 
 
 
-    let risultato = generaItinerario(
-        giorni,
-        preferenze
-    );
+let risultato = generaItinerario(
+    giorni,
+    preferenze,
+    tipoViaggio
+);
 
 
 
