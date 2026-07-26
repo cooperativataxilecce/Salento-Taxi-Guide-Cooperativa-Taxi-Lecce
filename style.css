@@ -887,3 +887,76 @@ input[type="time"] {
     font-weight:600;
 
 }
+
+
+/* Card itinerario */
+
+.itinerary-place {
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    margin-top: 20px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+
+}
+
+
+
+.itinerary-place h3 {
+
+    margin-bottom: 10px;
+
+    font-size: 20px;
+
+}
+
+
+
+.itinerary-place strong {
+
+    display: block;
+
+    font-size: 18px;
+
+    margin-top: 15px;
+
+}
+
+
+
+.itinerary-place p {
+
+    color: #555;
+
+    line-height: 1.5;
+
+    margin-top: 8px;
+
+}
+
+
+
+.itinerary-place a {
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 12px 20px;
+
+    border-radius: 12px;
+
+    background: #e87517;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+}
