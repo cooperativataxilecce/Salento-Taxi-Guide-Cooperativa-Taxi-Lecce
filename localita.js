@@ -2,6 +2,8 @@ const localita = [
 
 {
     nome: "Lecce",
+    descrizione:
+"Capoluogo del Salento, famosa per il barocco leccese, le piazze storiche, le chiese e la tradizione gastronomica."
 
     zona: "entroterra",
 
@@ -75,6 +77,8 @@ const localita = [
 
 {
     nome: "Gallipoli",
+        descrizione:
+"Città sul mare Ionio caratterizzata dal centro storico su un'isola, dalle spiagge vicine e dalla vivace atmosfera serale."
 
     zona: "ionio",
 
@@ -106,6 +110,8 @@ const localita = [
 
 {
     nome: "Torre dell'Orso",
+    descrizione:
+"Località balneare famosa per la lunga spiaggia, il mare cristallino e i panorami della costa adriatica, ideale per relax e famiglie."
 
     zona: "adriatico",
 
@@ -138,6 +144,8 @@ const localita = [
 
 {
     nome: "Castro",
+        descrizione:
+"Antico borgo sul mare con un suggestivo centro storico, grotte marine, scogliere e splendidi punti panoramici."
 
     zona: "adriatico",
 
@@ -171,6 +179,8 @@ const localita = [
 
 {
     nome: "Santa Maria di Leuca",
+        descrizione:
+"Il punto più a sud del Salento, famoso per l'incontro tra due mari, il lungomare, il santuario e i panorami sulla costa."
 
     zona: "ionio",
 
@@ -204,6 +214,8 @@ const localita = [
 
 {
     nome: "Pescoluse",
+        descrizione:
+"Conosciuta per le sue spiagge dalla sabbia chiara e il mare trasparente, è una delle località più adatte al relax estivo."
 
     zona: "ionio",
 
@@ -235,6 +247,8 @@ const localita = [
 
 {
     nome: "Porto Cesareo",
+        descrizione:
+"Località della costa ionica con spiagge sabbiose, acque limpide e aree naturali protette, perfetta per famiglie e amanti del mare."
 
     zona: "ionio",
 
@@ -266,6 +280,8 @@ const localita = [
 
 {
     nome: "Torre Lapillo",
+        descrizione:
+"Famosa per la sua ampia spiaggia e il mare poco profondo, ideale per giornate di mare tranquille e relax."
 
     zona: "ionio",
 
@@ -296,6 +312,8 @@ const localita = [
 
     {
     nome: "San Foca",
+        descrizione:
+"Piccolo centro costiero dell'Adriatico con porto turistico, spiagge sabbiose e un'atmosfera rilassata."
 
     zona: "adriatico",
 
@@ -327,6 +345,8 @@ const localita = [
 
 {
     nome: "Santa Cesarea Terme",
+        descrizione:
+"Località panoramica sulla costa adriatica conosciuta per le terme, le ville storiche e le viste spettacolari sul mare."
 
     zona: "adriatico",
 
@@ -358,6 +378,8 @@ const localita = [
 
 {
     nome: "Porto Badisco",
+        descrizione:
+"Piccola baia naturale tra mare e natura, famosa per i paesaggi incontaminati e l'atmosfera tranquilla."
 
     zona: "adriatico",
 
@@ -389,6 +411,8 @@ const localita = [
 
 {
     nome: "Torre San Giovanni",
+        descrizione:
+"Località balneare dello Ionio con lunghe spiagge sabbiose, mare limpido e una vivace passeggiata serale."
 
     zona: "ionio",
 
@@ -421,6 +445,8 @@ const localita = [
 
 {
     nome: "Baia Verde",
+        descrizione:
+"Zona costiera vicino Gallipoli famosa per le spiagge, i lidi e la vita serale durante la stagione estiva."
 
     zona: "ionio",
 
@@ -451,6 +477,8 @@ const localita = [
 
 {
     nome: "Rivabella",
+        descrizione:
+"Località sul mare vicino Gallipoli con spiagge attrezzate e un ambiente adatto a famiglie e vacanze rilassanti."
 
     zona: "ionio",
 
@@ -481,6 +509,8 @@ const localita = [
 
 {
     nome: "Punta Prosciutto",
+        descrizione:
+"Una delle spiagge più conosciute del Salento, caratterizzata da acqua cristallina, dune naturali e paesaggi incontaminati."
 
     zona: "ionio",
 
@@ -512,6 +542,8 @@ const localita = [
 
 {
     nome: "Acaya",
+        descrizione:
+"Antico borgo fortificato con un castello rinascimentale, mura storiche e un'atmosfera tranquilla vicino alla costa."
 
     zona: "entroterra",
 
@@ -542,6 +574,8 @@ const localita = [
 
 {
     nome: "Galatina",
+        descrizione:
+"Borgo ricco di storia e tradizioni, famoso per la Basilica di Santa Caterina, il centro storico e la cultura salentina."
 
     zona: "entroterra",
 
@@ -574,6 +608,8 @@ const localita = [
 
 {
     nome: "Martano",
+        descrizione:
+"Centro della Grecìa Salentina, caratterizzato da tradizioni antiche, architettura storica e cultura grika."
 
     zona: "entroterra",
 
