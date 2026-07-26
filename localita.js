@@ -44,13 +44,13 @@ const localita = [
     categorie: [
         "mare",
         "panorami",
-        "cultura"
+        "cultura",
+        "relax"
     ],
 
     idealePer: [
         "coppia",
-        "famiglia",
-        "amici"
+        "famiglia"
     ],
 
     stagioni: [
@@ -103,13 +103,14 @@ const localita = [
 
 
 {
-    nome: "Pescoluse",
+    nome: "Torre dell'Orso",
 
-    zona: "ionio",
+    zona: "adriatico",
 
     categorie: [
         "mare",
-        "relax",
+        "panorami",
+        "natura",
         "famiglia"
     ],
 
@@ -122,13 +123,46 @@ const localita = [
         "estate"
     ],
 
-    durata: 6,
+    durata: 5,
 
     priorita: 9,
 
     vicine: [
-        "Santa Maria di Leuca",
-        "Torre San Giovanni"
+        "San Foca",
+        "Grotta della Poesia"
+    ]
+},
+
+
+{
+    nome: "Castro",
+
+    zona: "adriatico",
+
+    categorie: [
+        "mare",
+        "panorami",
+        "natura",
+        "relax"
+    ],
+
+    idealePer: [
+        "coppia",
+        "famiglia"
+    ],
+
+    stagioni: [
+        "primavera",
+        "estate"
+    ],
+
+    durata: 4,
+
+    priorita: 9,
+
+    vicine: [
+        "Santa Cesarea Terme",
+        "Porto Badisco"
     ]
 },
 
@@ -167,49 +201,18 @@ const localita = [
 
 
 {
-    nome: "Castro",
+    nome: "Pescoluse",
 
-    zona: "adriatico",
-
-    categorie: [
-        "mare",
-        "panorami",
-        "natura"
-    ],
-
-    idealePer: [
-        "coppia",
-        "famiglia"
-    ],
-
-    stagioni: [
-        "primavera",
-        "estate"
-    ],
-
-    durata: 4,
-
-    priorita: 9,
-
-    vicine: [
-        "Santa Cesarea Terme",
-        "Porto Badisco"
-    ]
-},
-
-
-{
-    nome: "Porto Badisco",
-
-    zona: "adriatico",
+    zona: "ionio",
 
     categorie: [
         "mare",
         "relax",
-        "panorami"
+        "famiglia"
     ],
 
     idealePer: [
+        "famiglia",
         "coppia"
     ],
 
@@ -217,13 +220,75 @@ const localita = [
         "estate"
     ],
 
-    durata: 3,
+    durata: 6,
 
-    priorita: 8,
+    priorita: 9,
 
     vicine: [
-        "Otranto",
-        "Castro"
+        "Santa Maria di Leuca",
+        "Torre San Giovanni"
+    ]
+},
+
+
+{
+    nome: "Porto Cesareo",
+
+    zona: "ionio",
+
+    categorie: [
+        "mare",
+        "famiglia",
+        "relax"
+    ],
+
+    idealePer: [
+        "famiglia",
+        "coppia"
+    ],
+
+    stagioni: [
+        "estate"
+    ],
+
+    durata: 6,
+
+    priorita: 9,
+
+    vicine: [
+        "Torre Lapillo",
+        "Punta Prosciutto"
+    ]
+},
+
+
+{
+    nome: "Torre Lapillo",
+
+    zona: "ionio",
+
+    categorie: [
+        "mare",
+        "relax",
+        "famiglia"
+    ],
+
+    idealePer: [
+        "famiglia",
+        "coppia"
+    ],
+
+    stagioni: [
+        "estate"
+    ],
+
+    durata: 5,
+
+    priorita: 9,
+
+    vicine: [
+        "Porto Cesareo",
+        "Punta Prosciutto"
     ]
 }
 
