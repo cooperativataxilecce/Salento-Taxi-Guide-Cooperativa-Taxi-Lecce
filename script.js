@@ -40,8 +40,13 @@ window.addEventListener("DOMContentLoaded", function(){
 
 
 // Invio prenotazione WhatsApp
-document.getElementById("prenotazione")
-.addEventListener("submit", function(e){
+let formPrenotazione = document.getElementById("prenotazione");
+
+
+if(formPrenotazione){
+
+
+formPrenotazione.addEventListener("submit", function(e){
 
 
     e.preventDefault();
