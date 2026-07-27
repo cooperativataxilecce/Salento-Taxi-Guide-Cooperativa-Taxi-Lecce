@@ -446,7 +446,361 @@ Servizio privato e prenotabile.
 `;
 
 }
+// PIATTI TIPICI
 
+if(
+testo.includes("mangiare") ||
+testo.includes("piatti tipici") ||
+testo.includes("cucina") ||
+testo.includes("specialità") ||
+testo.includes("specialita") ||
+testo.includes("cibo")
+){
+
+return `
+
+In Salento ti consiglio di provare:
+
+• Pasticciotto leccese
+• Rustico leccese
+• Puccia salentina
+• Frisella salentina
+• Ciceri e Tria
+• Fave e cicorie
+• Pittule
+• Pesce fresco
+• Polpo alla pignata
+• Scapece gallipolina
+
+`;
+
+}
+
+
+
+// MOVIDA
+
+if(
+testo.includes("discoteca") ||
+testo.includes("movida") ||
+testo.includes("sera") ||
+testo.includes("nightlife") ||
+testo.includes("locali")
+){
+
+return `
+
+Per la vita serale ti consiglio:
+
+• Gallipoli → discoteche e locali estivi
+• Baia Verde → movida e beach club
+• Lecce → pub, wine bar e centro storico
+• Otranto → locali sul lungomare
+• Santa Maria di Leuca → cocktail bar vista mare
+
+`;
+
+}
+
+
+
+// FAMIGLIE
+
+if(
+testo.includes("bambini") ||
+testo.includes("famiglia") ||
+testo.includes("figli")
+){
+
+return `
+
+Le località migliori per famiglie sono:
+
+• Porto Cesareo
+• Torre Lapillo
+• Pescoluse
+• Torre dell'Orso
+• San Foca
+
+Sono tutte caratterizzate da spiagge sabbiose e mare generalmente basso.
+
+`;
+
+}
+
+
+
+// COPPIE
+
+if(
+testo.includes("coppia") ||
+testo.includes("romantico") ||
+testo.includes("fidanzata") ||
+testo.includes("fidanzato")
+){
+
+return `
+
+Per una vacanza romantica consiglio:
+
+• Otranto
+• Castro
+• Santa Maria di Leuca
+• Porto Badisco
+• Lecce la sera
+
+Ideali per tramonti, panorami e passeggiate.
+
+`;
+
+}
+
+
+
+// TRAMONTO
+
+if(
+testo.includes("tramonto") ||
+testo.includes("sunset")
+){
+
+return `
+
+I tramonti più belli del Salento si possono vedere a:
+
+• Gallipoli
+• Santa Maria di Leuca
+• Porto Cesareo
+• Punta Prosciutto
+• Torre San Giovanni
+
+`;
+
+}
+
+
+
+// ESCURSIONI
+
+if(
+testo.includes("barca") ||
+testo.includes("grotte") ||
+testo.includes("escursione")
+){
+
+return `
+
+Le migliori escursioni in barca partono da:
+
+• Castro
+• Santa Maria di Leuca
+• Otranto
+• Porto Cesareo
+
+Potrai visitare grotte marine e tratti di costa raggiungibili solo via mare.
+
+`;
+
+}
+
+
+
+// PIOGGIA
+
+if(
+testo.includes("piove") ||
+testo.includes("pioggia") ||
+testo.includes("maltempo")
+){
+
+return `
+
+Se piove puoi visitare:
+
+• Lecce
+• Galatina
+• Acaya
+• Martano
+• Musei
+• Castelli
+• Chiese barocche
+• Ristoranti tipici
+
+`;
+
+}
+
+
+
+// SHOPPING
+
+if(
+testo.includes("shopping") ||
+testo.includes("negozi") ||
+testo.includes("comprare")
+){
+
+return `
+
+Per lo shopping consiglio:
+
+• Lecce
+• Gallipoli centro storico
+• Otranto centro storico
+
+Troverai negozi di artigianato, ceramiche, prodotti tipici e souvenir.
+
+`;
+
+}
+
+
+
+// PARCHEGGIO
+
+if(
+testo.includes("parcheggio") ||
+testo.includes("parcheggiare")
+){
+
+return `
+
+Durante l'estate molti parcheggi nelle località balneari sono a pagamento.
+
+Se preferisci evitare lo stress del parcheggio puoi utilizzare i taxi di Cooperativa Taxi Lecce.
+
+`;
+
+}
+
+
+
+// SPIAGGE LIBERE
+
+if(
+testo.includes("spiaggia libera") ||
+testo.includes("spiagge libere")
+){
+
+return `
+
+Tra le spiagge libere più belle trovi:
+
+• Punta Prosciutto
+• Pescoluse
+• Torre dell'Orso
+• Torre Lapillo
+• Porto Badisco
+
+`;
+
+}
+
+
+
+// CANI
+
+if(
+testo.includes("cane") ||
+testo.includes("cani")
+){
+
+return `
+
+Nel Salento esistono diverse spiagge pet-friendly.
+
+Prima della visita ti consiglio comunque di verificare le regole aggiornate della località scelta.
+
+`;
+
+}
+
+
+
+// AEROPORTI
+
+if(
+testo.includes("aeroporto") ||
+testo.includes("brindisi") ||
+testo.includes("bari aeroporto")
+){
+
+return `
+
+Gli aeroporti principali sono:
+
+• Aeroporto di Brindisi
+• Aeroporto di Bari
+
+Cooperativa Taxi Lecce effettua trasferimenti privati da e per entrambi gli aeroporti.
+
+`;
+
+}
+
+
+
+// STAZIONI
+
+if(
+testo.includes("stazione") ||
+testo.includes("treno")
+){
+
+return `
+
+Puoi raggiungere facilmente:
+
+• Stazione di Lecce
+• Stazione di Gallipoli
+• Stazione di Otranto
+
+Con i taxi della Cooperativa Taxi Lecce puoi prenotare il trasferimento direttamente dalla stazione.
+
+`;
+
+}
+
+
+
+// PERIODO MIGLIORE
+
+if(
+testo.includes("quando venire") ||
+testo.includes("periodo migliore") ||
+testo.includes("quando visitare")
+){
+
+return `
+
+Il periodo migliore è:
+
+• Aprile e Maggio → cultura e borghi
+• Giugno → mare e tranquillità
+• Luglio e Agosto → spiagge e movida
+• Settembre → mare caldo e meno affollamento
+
+`;
+
+}
+
+
+
+// NOLEGGIO
+
+if(
+testo.includes("noleggio") ||
+testo.includes("auto") ||
+testo.includes("macchina")
+){
+
+return `
+
+Puoi visitare il Salento in auto oppure utilizzare Cooperativa Taxi Lecce per raggiungere comodamente spiagge, città, aeroporti e località turistiche senza preoccuparti del parcheggio.
+
+`;
+
+}
 
 
 // RISPOSTA GENERICA
