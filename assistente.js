@@ -82,7 +82,71 @@ function rispostaAssistente(domanda){
 
 
 let testo = domanda.toLowerCase();
+// RICERCA LOCALITÀ
 
+for(let localita in informazioniSalento){
+
+
+    if(testo.includes(localita.toLowerCase())){
+
+
+        let posto = informazioniSalento[localita];
+
+
+        if(
+            testo.includes("fare") ||
+            testo.includes("cosa posso fare") ||
+            testo.includes("attività") ||
+            testo.includes("attivita")
+        ){
+
+
+            return `
+            A ${localita} puoi fare:
+
+            • ${posto.fare.join("<br>• ")}
+
+            `;
+
+
+        }
+
+
+
+        if(
+            testo.includes("vedere") ||
+            testo.includes("attrazioni") ||
+            testo.includes("visitare") ||
+            testo.includes("cosa vedere")
+        ){
+
+
+            return `
+            A ${localita} puoi visitare:
+
+            • ${posto.vedere.join("<br>• ")}
+
+            `;
+
+
+        }
+
+
+
+        return `
+
+        ${posto.descrizione}
+
+        Ti consiglio:
+
+        • ${posto.fare.join("<br>• ")}
+
+        `;
+
+
+    }
+
+}
 
 
 // SALUTO
