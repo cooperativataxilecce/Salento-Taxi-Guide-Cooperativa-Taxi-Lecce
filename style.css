@@ -962,3 +962,19 @@ input[type="time"] {
     font-weight: 600;
 
 }
+
+
+.choice {
+
+    color:#222 !important;
+
+}
+
+
+.choice.selected {
+
+    background:#e87517 !important;
+
+    color:white !important;
+
+}
