@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Assistente Salento</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="header-brand">
+
+<img src="logo.png">
+
+<div class="header-text">
+
+<h1>Assistente Salento</h1>
+
+<p>Cooperativa Taxi Lecce</p>
+
+</div>
+
+</div>
+
+</header>
+
+
+
+
+<main class="booking-container">
+
+
+<section class="booking-card">
+
+
+<h2>
+Come posso aiutarti?
+</h2>
+
+
+<div class="suggestions">
+
+
+<button onclick="mandaDomanda('Quali sono le spiagge più belle?')">
+Spiagge più belle
+</button>
+
+
+<button onclick="mandaDomanda('Cosa posso visitare nel Salento?')">
+Cosa visitare
+</button>
+
+
+<button onclick="mandaDomanda('Crea un itinerario di 3 giorni')">
+Itinerario 3 giorni
+</button>
+
+
+</div>
+
+
+
+<div id="chat">
+
+
+<div class="bot-message">
+
+Ciao, sono il tuo assistente Salento.
+Posso aiutarti a scoprire spiagge, borghi, città e itinerari.
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="chat-input">
+
+
+<input 
+id="domanda"
+placeholder="Scrivi una domanda...">
+
+
+<button onclick="inviaMessaggio()">
+
+Invia
+
+</button>
+
+
+</div>
+
+
+</section>
+
+
+</main>
+
+
+
+
+<script src="assistente.js"></script>
+
+
+</body>
+
+</html>
