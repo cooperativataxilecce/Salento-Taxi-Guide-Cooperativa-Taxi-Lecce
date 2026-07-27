@@ -114,7 +114,8 @@ if(tipo){
                 "1 giorno",
                 "2 giorni",
                 "3 giorni",
-                "4-5 giorni",
+                "4 giorni",
+                "5 giorni",
                 "7 giorni"
                 ]
                 .includes(btn.innerText)
@@ -128,11 +129,42 @@ if(tipo){
             });
 
 
-            this.classList.add("selected");
+            if(this.classList.contains("selected")){
+
+    this.classList.remove("selected");
+
+    giorni = 3;
+
+} else {
 
 
+    document.querySelectorAll(".choice")
+    .forEach(btn=>{
 
-            giorni = parseInt(this.innerText);
+        if(
+        [
+        "1 giorno",
+        "2 giorni",
+        "3 giorni",
+        "4 giorni",
+        "5 giorni",
+        "7 giorni"
+        ]
+        .includes(btn.innerText)
+        ){
+
+            btn.classList.remove("selected");
+
+        }
+
+    });
+
+
+    this.classList.add("selected");
+
+    giorni = parseInt(this.innerText);
+
+}
 
 
 
