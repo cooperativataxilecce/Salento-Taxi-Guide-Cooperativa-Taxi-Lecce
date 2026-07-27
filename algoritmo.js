@@ -22,7 +22,7 @@ preferenze.forEach(pref => {
 
 
 
-tipoViaggio.forEach(tipo => {
+(tipoViaggio || []).forEach(tipo => {
 
 
     if(posto.idealePer.includes(tipo)){
@@ -36,7 +36,7 @@ tipoViaggio.forEach(tipo => {
 
 
 
-        punteggio += posto.priorita;
+        punteggio += posto.priorita || 0;
 
 
 
