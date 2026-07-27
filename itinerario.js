@@ -1,3 +1,5 @@
+console.log("itinerario caricato");
+
 let giorni = 3;
 
 
