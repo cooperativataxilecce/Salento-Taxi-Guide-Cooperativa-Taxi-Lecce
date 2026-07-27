@@ -1,6 +1,6 @@
 {
   "name": "Salento Taxi Guide",
-  "short_name": "Salento Taxi",
+  "short_name": "Salento Guide",
   "description": "Scopri il Salento e prenota il tuo taxi con Cooperativa Taxi Lecce.",
   "start_url": "index.html",
   "display": "standalone",
