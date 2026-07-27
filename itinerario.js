@@ -196,8 +196,7 @@ document.querySelector(".main-button")
 
 
 function mostraItinerario(){
-
-let vecchioItinerario = document.querySelector(".risultato-itinerario");
+let vecchioItinerario = document.querySelector(".booking-container .risultato-itinerario");
 
 if(vecchioItinerario){
 
@@ -302,7 +301,7 @@ Prenota Taxi
 
 
 
-    document.body.appendChild(contenitore);
+   document.querySelector(".booking-container").appendChild(contenitore);
 
 
 
