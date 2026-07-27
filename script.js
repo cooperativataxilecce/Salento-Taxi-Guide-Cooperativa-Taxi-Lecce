@@ -118,6 +118,8 @@ Accettata`;
 
 });
 
+    }
+
 window.addEventListener("DOMContentLoaded", function(){
 
 
