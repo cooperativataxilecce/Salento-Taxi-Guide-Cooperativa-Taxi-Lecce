@@ -197,7 +197,13 @@ document.querySelector(".main-button")
 
 function mostraItinerario(){
 
+let vecchioItinerario = document.querySelector(".risultato-itinerario");
 
+if(vecchioItinerario){
+
+    vecchioItinerario.remove();
+
+}
 
 let risultato = generaItinerario(
     giorni,
@@ -210,7 +216,7 @@ let risultato = generaItinerario(
     let contenitore = document.createElement("section");
 
 
-    contenitore.className="booking-card";
+    contenitore.className="booking-card risultato-itinerario";
 
 
 
