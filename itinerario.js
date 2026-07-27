@@ -97,7 +97,8 @@ if(tipo){
             "1 giorno",
             "2 giorni",
             "3 giorni",
-            "4-5 giorni",
+            "4 giorni",
+            "5 giorni",
             "7 giorni"
             ]
             .includes(this.innerText)
