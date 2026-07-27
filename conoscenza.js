@@ -4,11 +4,10 @@ const informazioniSalento = {
 "Lecce": {
 
 descrizione:
-descrizione:
 "Denominata la Firenze del Sud, Lecce conquista visitatori con il suo straordinario barocco, le piazze storiche, le chiese e la cucina tradizionale salentina.",
 
 fare:[
-  "Ammirare il barocco leccese"
+  "Ammirare il barocco leccese",
 "Visitare Piazza Duomo",
 "Vedere la Basilica di Santa Croce",
 "Passeggiare nel centro storico",
