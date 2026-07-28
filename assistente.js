@@ -82,6 +82,58 @@ function rispostaAssistente(domanda){
 
 
 let testo = domanda.toLowerCase();
+    // DOMANDE DI SPOSTAMENTO
+
+if(
+testo.includes("arrivare") ||
+testo.includes("raggiungere") ||
+testo.includes("come andare") ||
+testo.includes("distanza") ||
+testo.includes("quanto dista") ||
+testo.includes("come arrivare") ||
+testo.includes("trasporto") ||
+testo.includes("treno") ||
+testo.includes("autobus") ||
+testo.includes("taxi")
+){
+
+let destinazione = "";
+
+for(let localita in informazioniSalento){
+
+    if(testo.includes(localita.toLowerCase())){
+
+        destinazione = localita;
+        break;
+
+    }
+
+}
+
+
+if(destinazione){
+
+return `
+
+Per raggiungere ${destinazione} da Lecce puoi scegliere:
+
+Taxi:
+È la soluzione più comoda e diretta. 
+Puoi prenotare un trasferimento privato con Cooperativa Taxi Lecce.
+
+Auto:
+Puoi raggiungere la località comodamente seguendo la strada principale.
+
+Trasporti pubblici:
+Sono disponibili collegamenti ferroviari o autobus (in base alla destinazione).
+
+Se vuoi posso indicarti anche distanza, tempi e costo stimato del taxi.
+
+`;
+
+}
+
+}
 // RICERCA LOCALITÀ
 
 for(let localita in informazioniSalento){
